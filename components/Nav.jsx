@@ -18,6 +18,7 @@ function Nav() {
                 </div>
                 <div className="bg-blue-500 w-12 h-12 ring-2 ring-green overflow-hidden rounded-full ">
                     <Image
+                        alt=""
                         className="h-full w-full object-cover"
                         src={dp}
                         height={100}

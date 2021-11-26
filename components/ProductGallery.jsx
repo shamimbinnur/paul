@@ -21,6 +21,7 @@ function ProductGallery({images}) {
             <div className=" flex flex-col w-full  px-10 py-20 " >
                     <div onClick={()=> setShow(true)} className="w-full max-h-96 rounded-3xl border-2 overflow-hidden border-white  bg-blue-300 mb-12 ">
                         <Image
+                            alt=""
                             className="w-full h-full object-fit "
                             src={images[imageIndex]}
                             height={1350}
@@ -30,8 +31,9 @@ function ProductGallery({images}) {
                     <div className="flex justify-center ">
                         {
                             images.map((item, i) => (
-                                <div className={" w-14 h-14 rounded-md mr-6 border overflow-hidden border-yellow bg-blue-300 cursor-pointer  " }>
+                                <div key={i} className={" w-14 h-14 rounded-md mr-6 border overflow-hidden border-yellow bg-blue-300 cursor-pointer  " }>
                                     <Image
+                                    alt=""
                                     className="w-full h-full object-fit  "
                                     src={images[i]}
                                     height={1100}
