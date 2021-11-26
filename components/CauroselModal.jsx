@@ -47,6 +47,7 @@ function CauroselModal({images, imageIndex,setImageIndex, show, setShow}) {
                 <div className=" h-full w-full flex flex-col justify-center items-center px-5 md:px-24 py-10 ">
                     <div  className=" flex justify-center h-full w-full  rounded-md  mb-10 overflow-hidden">
                         <Image
+                            alt=""
                             className=" object-center w-full h-full rounded-md "
                             src={images[imageIndex]}
                             height={600}
@@ -56,8 +57,9 @@ function CauroselModal({images, imageIndex,setImageIndex, show, setShow}) {
                     <div className=" flex ">
                         {
                             images.map((item, i) => (
-                                    <div className={" w-14 h-14 rounded-md border overflow-hidden border-yellow bg-blue-300 cursor-pointer  mr-4  " }>
+                                    <div key={i} className={" w-14 h-14 rounded-md border overflow-hidden border-yellow bg-blue-300 cursor-pointer  mr-4  " }>
                                         <Image
+                                        alt=""
                                         className="w-full h-full object-fit  "
                                         src={images[i]}
                                         height={1000}
