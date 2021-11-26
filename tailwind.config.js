@@ -23,6 +23,7 @@ module.exports = {
         'orange-light': '#FF541E',
         'orange-dark': '#EB3800',
         'green': '#11BB4B',
+        'green-dark': '#009533',
         'yellow': '#FCFF64'
       }
     },
